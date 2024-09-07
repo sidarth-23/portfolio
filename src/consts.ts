@@ -3,3 +3,5 @@
 
 export const SITE_TITLE = 'Astro Blog';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const GENERATE_SLUG_FROM_TITLE = true;
+export const TRANSITION_API = true;

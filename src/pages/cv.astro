@@ -1,0 +1,139 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I'm a seasoned Next.js developer with robust experience in backend
+    development using Golang, Node.js, and FastAPI. My expertise extends to
+    deploying real production applications in Docker containers, ensuring
+    scalability and efficiency. Additionally, I possess a solid understanding of
+    frontend frameworks like Svelte, Angular, and Astro, allowing me to create
+    seamless, high-performance user interfaces. My diverse skill set enables me
+    to build full-stack applications that are both innovative and reliable.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="B.tech, EEE"
+      subtitle="2018 to 2024 at Amrita University, Coimbatore, India"
+    />
+    <TimeLineElement
+      title="High School"
+      subtitle="2016 to 2018 at Senthil Public School, Salem, India"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Developer Engineer - 1"
+      subtitle="From Jan 2024 at Teachedison, Coimbatore, India"
+    >
+      I specialize in full-stack micro tools to drive organic marketing leads,
+      focusing on frontend development primarily with Next.js and utilizing
+      backend frameworks like Golang's Echo, Node.js's Hono, and Python's
+      FastAPI. I have a strong grasp of frontend frameworks such as Svelte,
+      Angular, and Astro, and have also contributed to projects using React. My
+      expertise extends to Docker and Kubernetes, where I’ve built and deployed
+      applications in both cloud and on-premise environments. Through numerous
+      POCs for codebase setup, I’ve gained in-depth knowledge of bundling tools
+      like Vite and Webpack, enabling me to optimize bundles for superior
+      performance.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Trainee Consultant"
+      subtitle="From Oct 2023 to Jan 2024 at Applexus, Trivandrum, India"
+    >
+      I focused on building strong expertise in Angular and Express.js while
+      contributing to projects involving SAP Fiori and SAP UI5. I also played a
+      key role in creating database queries to clean up unused data in
+      PostgreSQL, with my efforts being well-recognized by the team, making me
+      the go-to person for debugging tasks. Additionally, my research on
+      monorepo tools like NX provided me with significant knowledge about code
+      bundling.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a
+        href="https://www.boot.dev/certificate/lostboot50/3b39d0f6-f944-4f1b-832d-a1daba32eda4"
+        target="_blank">Boot.dev's Learn Go Course (with link)</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://certificates.cs50.io/bf85e0a3-fe88-4281-badc-948d55a269d1.pdf?size=letter"
+        target="_blank"
+      >
+        CS50's Introduction to Computer Science (with link)</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/specialization/certificate/PAEF3VXVBNB4"
+        target="_blank">Google Project Management Certificate (with link)</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/specialization/certificate/NLAT8P4VQJS9"
+        target="_blank"
+        >IBM Full Stack Software Developer Specialization (with link)</a
+      >
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>NextJS and React</li>
+    <li>Svelte and Sveltekit</li>
+    <li>AstroJS</li>
+    <li>Type Script</li>
+    <li>Tailwind</li>
+    <li>ExpressJS</li>
+    <li>SQL</li>
+    <li>React</li>
+    <li>Docker</li>
+    <li>PostgreSQL</li>
+    <li>Golang</li>
+    <li>Echo</li>
+    <li>Python</li>
+    <li>Fastapi</li>
+    <li>Linux</li>
+  </ul>
+</BaseLayout>
+
+<style>
+  a {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  a:hover:after {
+    opacity: 1;
+  }
+</style>
